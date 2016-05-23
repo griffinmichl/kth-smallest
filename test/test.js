@@ -1,5 +1,5 @@
-const test = require('tape')
-const { swap, partition, kthLargest } = require('./index')
+import test from 'tape'
+import { swap, partition, kthLargest } from '../src/kthLargest'
 
 test('swap flips two elements in an array in place', (t) => {
   t.plan(2)
