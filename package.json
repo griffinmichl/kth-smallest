@@ -13,6 +13,10 @@
     "clean": "./node_modules/.bin/rimraf lib",
     "lint": "./node_modules/.bin/eslint src"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gm758/kth-largest.git"
+  },
   "author": "Griffin Michl <griffinmichl@gmail.com>",
   "license": "MIT",
   "dependencies": {},
