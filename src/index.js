@@ -1,3 +1,3 @@
 import { kthLargest } from './kthLargest'
-export default kthLargest
+module.exports = kthLargest
 
