@@ -1,0 +1,14 @@
+{
+  "name": "kth-largest",
+  "version": "0.1.0",
+  "description": "npm package for finding kth largest element in a string in average case linear time",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Griffin Michl <griffinmichl@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tape": "^4.5.1"
+  }
+}
