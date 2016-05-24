@@ -43,6 +43,6 @@ export function kthSmallest(nums, k) {
     return undefined
   }
 
-  return kthSmallestHelper(nums, k, 0, nums.length - 1)
+  return kthSmallestHelper(nums.slice(), k, 0, nums.length - 1)
 }
 

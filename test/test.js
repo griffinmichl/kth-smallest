@@ -158,3 +158,13 @@ test('kthSmallest includes repeats in count of k elements', (t) => {
   t.equal(kthSmallest(nums, 2), 5)
 })
 
+test('kth smallest does not mutate the original array', (t) => {
+  t.plan(2)
+  const nums = [2,1,4,3,0]
+  const originalNums = nums.slice()
+  kthSmallest(nums, 0)
+  t.ok(JSON.stringify(originalNums), JSON.stringify(nums))
+  kthSmallest(nums, 2)
+  t.ok(JSON.stringify(originalNums), JSON.stringify(nums))
+})
+
