@@ -23,6 +23,7 @@ kthSmallest([10, 20, 30, 40], 2)
 
 ## API
 kthSmallest :: number a => [a] -> integer -> a
+
 kthSmallest(numbers, k)
 
 __Arguments__
