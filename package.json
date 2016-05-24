@@ -1,6 +1,6 @@
 {
   "name": "kth-smallest",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "npm package for finding kth largest element in a string in average case linear time",
   "main": "lib/index.js",
   "scripts": {
