@@ -18,16 +18,16 @@ export function partition(nums, pivotIndex, left = 0, right = nums.length - 1) {
   return swapIndex
 }
 
-export function kthLargest(nums, k) {
-  function kthLargestHelper(nums, k, left, right) {
+export function kthSmallest(nums, k) {
+  function kthSmallestHelper(nums, k, left, right) {
     const pivotIndex = Math.floor(Math.random() * (right - left) + left)
     const resultIndex = partition(nums, pivotIndex, left, right)
     if (resultIndex === k) {
       return nums[resultIndex]
     } else if (resultIndex < k) {
-      return kthLargestHelper(nums, k, resultIndex + 1, right)
+      return kthSmallestHelper(nums, k, resultIndex + 1, right)
     } else {
-      return kthLargestHelper(nums, k, left, resultIndex - 1)
+      return kthSmallestHelper(nums, k, left, resultIndex - 1)
     }
   }
 
@@ -43,6 +43,6 @@ export function kthLargest(nums, k) {
     return undefined
   }
 
-  return kthLargestHelper(nums, k, 0, nums.length - 1)
+  return kthSmallestHelper(nums, k, 0, nums.length - 1)
 }
 

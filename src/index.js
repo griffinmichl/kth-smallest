@@ -1,3 +1,3 @@
-import { kthLargest } from './kthLargest'
-module.exports = kthLargest
+import { kthSmallest } from './kthSmallest'
+module.exports = kthSmallest
 
