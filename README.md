@@ -3,7 +3,7 @@ Find kth smallest element in an arary of numbers
 
 Uses a randomized quickselect to achieve O(n) average case time complexity
 
-[![Build Status](https://travis-ci.org/gm758/kth-largest.svg?branch=master)](https://travis-ci.org/gm758/kth-largest)
+[![Build Status](https://travis-ci.org/gm758/kth-smallest.svg?branch=master)](https://travis-ci.org/gm758/kth-smallest)
 
 ## Install
 ```bash
