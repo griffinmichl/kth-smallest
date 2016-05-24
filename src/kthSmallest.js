@@ -39,8 +39,12 @@ export function kthSmallest(nums, k) {
     throw new TypeError(`k should be integer, got ${typeof k} `)
   }
 
-  if (k < 0 || k >= nums.length) {
+  if (k >= nums.length || k < nums.length * -1) {
     return undefined
+  }
+
+  if (k < 0) {
+    k += nums.length
   }
 
   return kthSmallestHelper(nums.slice(), k, 0, nums.length - 1)

@@ -19,6 +19,10 @@ kthSmallest([10, 20, 30, 40], 0)
 
 kthSmallest([10, 20, 30, 40], 2)
 // 30
+
+kthSmallest([10, 20, 30, 40], -1)
+// 40
+
 ```
 
 ## API
@@ -28,6 +32,6 @@ kthSmallest(numbers, k)
 
 __Arguments__
 * `numbers` - An array of numbers
-* `k` - 0-indexed target
+* `k` - 0-indexed target (pass negative numbers for largest)
 
 

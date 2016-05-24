@@ -94,10 +94,20 @@ test('partition works on arrays of length 1', (t) => {
   t.equal(nums[0], 1)
 })
 
+test('kthSmallest works backwards when given a negative number', (t) => {
+  t.plan(5)
+  const nums = [1,2,3,4,5]
+  t.equal(kthSmallest(nums, -1), 5)
+  t.equal(kthSmallest(nums, -2), 4)
+  t.equal(kthSmallest(nums, -3), 3)
+  t.equal(kthSmallest(nums, -4), 2)
+  t.equal(kthSmallest(nums, -5), 1)
+})
+
 test('kthSmallest returns undefined when k not in range', (t) => {
   t.plan(2)
   const nums = [1,2,3,4,5]
-  t.equal(kthSmallest(nums, -1), undefined)
+  t.equal(kthSmallest(nums, -1000), undefined)
   t.equal(kthSmallest(nums, 10), undefined)
 })
 
