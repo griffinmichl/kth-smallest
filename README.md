@@ -26,9 +26,11 @@ kthSmallest([10, 20, 30, 40], -1)
 ```
 
 ## API
+```js
 kthSmallest :: number a => [a] -> integer -> a
 
 kthSmallest(numbers, k)
+```
 
 __Arguments__
 * `numbers` - An array of numbers
