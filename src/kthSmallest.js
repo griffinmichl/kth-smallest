@@ -1,3 +1,5 @@
+import isNumber from 'is-number'
+
 export function swap(array, index1, index2) {
   const tmp = array[index1]
   array[index1] = array[index2]
@@ -33,6 +35,10 @@ export function kthSmallest(nums, k) {
 
   if (!Array.isArray(nums)) {
     throw new TypeError(`nums should be array, got ${typeof nums}`)
+  }
+
+  if (!nums.every(isNumber)) {
+    throw new TypeError('nums array must contain only numbers')
   }
 
   if (!Number.isInteger(k)) {

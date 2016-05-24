@@ -132,11 +132,11 @@ test('kthSmallest throws when first input is not array or second input is not in
 
 test('kthSmallest throws when array contains non-numbers', (t) => {
   t.plan(5)
-  t.throws(() => median(['a', 'b', 'c']))
-  t.throws(() => median([undefined, undefined, undefined]))
-  t.throws(() => median([NaN, NaN, NaN]))
-  t.throws(() => median([[1], [2], [3]]))
-  t.throws(() => median([{}, {}, {}]))
+  t.throws(() => kthSmallest(['a', 'b', 'c'], 0))
+  t.throws(() => kthSmallest([undefined, undefined, undefined], 0))
+  t.throws(() => kthSmallest([NaN, NaN, NaN], 0))
+  t.throws(() => kthSmallest([[1], [2], [3]], 0))
+  t.throws(() => kthSmallest([{}, {}, {}], 0))
 })
 
 test('kthSmallest finds the kth largest element in descending array', (t) => {
