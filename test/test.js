@@ -50,7 +50,7 @@ test('partition places smaller nodes before pivot', (t) => {
 
 test('partition places larger nodes after pivot', (t) => {
   t.plan(5)
-  const nums = [5,4,3,2,1] 
+  const nums = [5,4,3,2,1]
 
   partition(nums, 4)
   t.equal(nums[0], 1)
@@ -77,7 +77,7 @@ test('partition returns the new index of pivot', (t) => {
 
 test('partition leaves an array of duplicates unchanged', (t) => {
   t.plan(5)
-  const nums = [1,1,1,1,1] 
+  const nums = [1,1,1,1,1]
 
   partition(nums, 0)
   t.equal(nums[0], 1)
@@ -130,6 +130,15 @@ test('kthSmallest throws when first input is not array or second input is not in
   t.throws(() => kthSmallest([1,2,3,4,5], '1'), 'throws when k is string')
 })
 
+test('kthSmallest throws when array contains non-numbers', (t) => {
+  t.plan(5)
+  t.throws(() => median(['a', 'b', 'c']))
+  t.throws(() => median([undefined, undefined, undefined]))
+  t.throws(() => median([NaN, NaN, NaN]))
+  t.throws(() => median([[1], [2], [3]]))
+  t.throws(() => median([{}, {}, {}]))
+})
+
 test('kthSmallest finds the kth largest element in descending array', (t) => {
   t.plan(5)
   const nums = [4,3,2,1,0]
@@ -177,4 +186,3 @@ test('kth smallest does not mutate the original array', (t) => {
   kthSmallest(nums, 2)
   t.ok(JSON.stringify(originalNums), JSON.stringify(nums))
 })
-

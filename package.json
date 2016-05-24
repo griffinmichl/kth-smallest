@@ -19,7 +19,9 @@
   },
   "author": "Griffin Michl <griffinmichl@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "is-number": "^2.1.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
