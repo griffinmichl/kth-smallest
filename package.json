@@ -1,7 +1,7 @@
 {
   "name": "kth-smallest",
   "version": "2.2.0",
-  "description": "npm package for finding kth largest element in a string in average case linear time",
+  "description": "Find kth smallest element in an array of numbers in amortized linear time",
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/.bin/babel-node ./test/test.js",
