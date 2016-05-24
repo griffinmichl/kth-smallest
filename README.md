@@ -1,5 +1,5 @@
-## kth-largest
-Find kth largest element in an arary of numbers
+## kth-smallest
+Find kth smallest element in an arary of numbers
 
 Uses a randomized quickselect to achieve O(n) average case time complexity
 
@@ -7,25 +7,26 @@ Uses a randomized quickselect to achieve O(n) average case time complexity
 
 ## Install
 ```bash
-$ npm install kth-largest
+$ npm install kth-smallest
 ```
 
 ## Usage
 ```js
-import kthLargest from 'kth-largest'
+import kthSmallest from 'kth-smallest'
 
-kthLargest([10, 20, 30, 40], 0)
+kthSmallest([10, 20, 30, 40], 0)
 // 10
 
-kthLargest([10, 20, 30, 40], 2)
+kthSmallest([10, 20, 30, 40], 2)
 // 30
 ```
 
 ## API
-kthLargest :: number a => [a] -> integer -> a
-kthLargest(numbers, k)
+kthSmallest :: number a => [a] -> integer -> a
+kthSmallest(numbers, k)
 
 __Arguments__
 * `numbers` - An array of numbers
 * `k` - 0-indexed target
+
 
