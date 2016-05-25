@@ -1,6 +1,6 @@
 {
   "name": "kth-smallest",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "Find kth smallest element in an array of numbers in amortized linear time",
   "main": "lib/index.js",
   "scripts": {
