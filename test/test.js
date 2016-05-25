@@ -139,7 +139,7 @@ test('kthSmallest throws when array contains non-numbers', (t) => {
   t.throws(() => kthSmallest([{}, {}, {}], 0))
 })
 
-test('kthSmallest finds the kth largest element in descending array', (t) => {
+test('kthSmallest finds the kth smallest element in descending array', (t) => {
   t.plan(5)
   const nums = [4,3,2,1,0]
   t.equal(kthSmallest(nums, 0), 0)
@@ -149,7 +149,7 @@ test('kthSmallest finds the kth largest element in descending array', (t) => {
   t.equal(kthSmallest(nums, 4), 4)
 })
 
-test('kthSmallest finds the kth largest element in ascending array', (t) => {
+test('kthSmallest finds the kth smallest element in ascending array', (t) => {
   t.plan(5)
   const nums = [0,1,2,3,4]
   t.equal(kthSmallest(nums, 0), 0)
@@ -159,7 +159,7 @@ test('kthSmallest finds the kth largest element in ascending array', (t) => {
   t.equal(kthSmallest(nums, 4), 4)
 })
 
-test('kthSmallest finds the kth largest element in unsorted array', (t) => {
+test('kthSmallest finds the kth smallest element in unsorted array', (t) => {
   t.plan(5)
   const nums = [2,4,1,0,3]
   t.equal(kthSmallest(nums, 0), 0)
