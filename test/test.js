@@ -21,19 +21,19 @@ test('swap leaves the rest of the array unchanged', (t) => {
 test('partition always leaves a sorted array unchanged', (t) => {
   t.plan(4)
   const nums = [1,2,3,4,5]
-  const originalNums = JSON.stringify(nums.slice())
+  const originalNums = nums.slice()
 
   partition(nums, 0)
-  t.equal(JSON.stringify(nums),originalNums)
+  t.deepEqual(nums, originalNums)
 
   partition(nums, 1)
-  t.equal(JSON.stringify(nums), originalNums)
+  t.deepEqual(nums, originalNums)
 
   partition(nums, 2)
-  t.equal(JSON.stringify(nums), originalNums)
+  t.deepEqual(nums, originalNums)
 
   partition(nums, 3)
-  t.equal(JSON.stringify(nums), originalNums)
+  t.deepEqual(nums, originalNums)
 })
 
 test('partition places smaller nodes before pivot', (t) => {
@@ -182,7 +182,7 @@ test('kth smallest does not mutate the original array', (t) => {
   const nums = [2,1,4,3,0]
   const originalNums = nums.slice()
   kthSmallest(nums, 0)
-  t.ok(JSON.stringify(originalNums), JSON.stringify(nums))
+  t.deepEqual(originalNums, nums)
   kthSmallest(nums, 2)
-  t.ok(JSON.stringify(originalNums), JSON.stringify(nums))
+  t.deepEqual(originalNums, nums)
 })
